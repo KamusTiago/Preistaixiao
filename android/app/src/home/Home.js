@@ -41,7 +41,7 @@ export default Home;
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#2457ff',
+        backgroundColor: '#0d0082',
         flex: 1
     },
     textoHome: {
