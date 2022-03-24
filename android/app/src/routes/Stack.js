@@ -3,6 +3,7 @@ import {View, Text} from 'react-native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
 import Home from '../views/Home'
+import Login from '../views/Login'
 
 class Stack extends Component{
 
@@ -14,7 +15,7 @@ class Stack extends Component{
         const Stack = createNativeStackNavigator();
         return(
             <Stack.Navigator >
-                <Stack.Screen name='Home' component={Home}/>
+                <Stack.Screen  name='Home' component={Home}/>
             </Stack.Navigator> 
         )
     }

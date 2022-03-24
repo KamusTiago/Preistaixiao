@@ -12,7 +12,7 @@ class Home extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.textoHome}>
-                <Image style={{width: 150, height: 150}} source={require('../../../app/assets/img/logopsbranca.png')}/>
+                <Image style={{width: 100, height: 100}} source={require('../../../app/assets/img/logopsbranca.png')}/>
                     <Text style={styles.estiloTextoHome}>Bem-vindo(a) ao </Text>
                     <Text style={styles.estiloTextoHome}>Preistaixion App </Text>
                 </View>
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     estiloTextoHome: {
-        fontSize: 30,
+        fontSize: 28,
         color: '#ffff',
     },
     botao:{
