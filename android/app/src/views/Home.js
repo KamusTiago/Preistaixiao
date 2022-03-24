@@ -2,14 +2,9 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 
 
-class Home extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (
+function Home ({ navigation }){
+    return(
             <View style={styles.container}>
                 <View style={styles.textoHome}>
                 <Image style={{width: 100, height: 100}} source={require('../../../app/assets/img/logopsbranca.png')}/>
@@ -24,7 +19,7 @@ class Home extends Component {
                         justifyContent: 'center',
                         paddingBottom: 15
                     }}>Vamos lá!</Text>
-                <TouchableOpacity style={styles.botao} onPress={() => navigator.navigate('Login')}>
+                <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Login')}>
                     <View style={styles.btnArea}>
                         <Text style={styles.btnTexto}>
                                 Iniciar sessão
@@ -33,9 +28,20 @@ class Home extends Component {
                 </TouchableOpacity>
                 </View>
             </View>
-        )
-    }
+    )
 }
+
+// class Home extends Component {
+
+//     constructor(props) {
+//         super(props);
+//     }
+
+//     render() {
+//         return (
+//         )
+//     }
+// }
 
 export default Home;
 
