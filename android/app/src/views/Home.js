@@ -7,9 +7,11 @@ function Home ({ navigation }){
     return(
             <View style={styles.container}>
                 <View style={styles.textoHome}>
-                <Image style={{width: 100, height: 100}} source={require('../assets/img/logopsbranca.png')}/>
+                    <View >
+                        <Image style={{width: 130, height: 100}} source={require('../assets/img/logopsbranca.png')}/>
+                    </View>
                     <Text style={styles.estiloTextoHome}>Bem-vindo(a) ao </Text>
-                    <Text style={styles.estiloTextoHome}>Preistaixion App </Text>
+                    <Text style={styles.estiloTextoHome}>Preistaixion App  </Text>
                 </View>
                 <View style={{alignItems: 'center', paddingBottom: 50}}>
                     <Text style={{
@@ -48,6 +50,9 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#0d0082',
+        flex: 1
+    },
+    logops:{
         flex: 1
     },
     textoHome: {
